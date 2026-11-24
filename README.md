@@ -1,5 +1,7 @@
 # Express API starter
 
+[![Deploy on Containify](https://containify.cloud/deploy-button.svg)](https://containify.cloud/templates/express)
+
 A small [Express 5](https://expressjs.com) API in TypeScript on Node.js 22, with a Postgres database, ready to deploy on [Containify](https://containify.cloud).
 
 - `GET /` says hello and lists the routes
@@ -22,6 +24,10 @@ Then open http://localhost:3000.
 
 ## Deploy on Containify
 
+[![Deploy on Containify](https://containify.cloud/deploy-button.svg)](https://containify.cloud/templates/express)
+
+One click deploys it on [Containify](https://containify.cloud). The [template page](https://containify.cloud/templates/express) shows what it creates, and passwords, connection strings and the HTTPS address are filled in for you.
+
 Deploy the **Express API starter** template from the catalogue (`containify templates deploy express`). It builds this repository with its Dockerfile and adds:
 
 - **API**: this app, on a public HTTPS endpoint, with `/health` as its health check. Its pre-deploy command, `node dist/migrate.js`, runs the migrations before each release takes traffic.
@@ -39,3 +45,7 @@ To make it yours, fork this repository, then point the API app's source at your 
 ## License
 
 MIT
+
+---
+
+Made by [Containify](https://containify.cloud): deploy apps, databases and workers from a Git repo or an image, with per-second billing. [Docs](https://containify.cloud/docs) · [Templates](https://containify.cloud/templates)
